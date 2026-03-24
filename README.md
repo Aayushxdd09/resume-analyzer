@@ -23,7 +23,11 @@ It also gives AI suggestions to improve your resume.
 - HTML/CSS
 - Ollama (for AI)
 
----
+## Key Highlights
+
+- Built a full-stack web app using Flask
+- Integrated local LLM (Ollama) for AI suggestions
+- Implemented skill-based resume scoring system
 
 ## How to run
 
