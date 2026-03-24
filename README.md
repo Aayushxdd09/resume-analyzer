@@ -1,6 +1,6 @@
 # Resume Analyzer with AI
 
-This is a web app where you can upload your resume and get a score based on your skills.
+An AI-powered web application that analyzes resumes and provides skill-based scoring along with improvement suggestions.
 
 It also gives AI suggestions to improve your resume.
 
