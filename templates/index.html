@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analyzer</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Resume Analyzer</h2>
+
+<!-- 🟢 FORM 1: FAST ANALYSIS -->
+<form method="POST" enctype="multipart/form-data">
+    <label>Select Role:</label>
+    <select name="role">
+        <option>Data Analyst</option>
+        <option>Backend Developer</option>
+        <option>AI Engineer</option>
+    </select>
+
+    <br><br>
+
+    <input type="file" name="resume" required>
+
+    <br><br>
+
+    <button type="submit">Analyze</button>
+</form>
+
+
+{% if score %}
+    <h3>Score: {{ score }}%</h3>
+
+    <p><b>Matched Skills:</b> {{ matched }}</p>
+    <p><b>Missing Skills:</b> {{ missing }}</p>
+
+    <!-- 🔵 FORM 2: AI BUTTON -->
+    <form method="POST" action="/ai-feedback" enctype="multipart/form-data">
+        <input type="hidden" name="role" value="{{ role }}">
+        <input type="file" name="resume" required>
+
+        <button type="submit">Get AI Suggestions</button>
+    </form>
+
+{% endif %}
+
+
+{% if feedback %}
+    <h4>AI Suggestions:</h4>
+    <pre>{{ feedback }}</pre>
+{% endif %}
+
+</div>
+
+</body>
+</html>
