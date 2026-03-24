@@ -2,7 +2,7 @@
 
 An AI-powered web application that analyzes resumes and provides skill-based scoring along with improvement suggestions.
 
-It also gives AI suggestions to improve your resume.
+Provides AI-powered suggestions to improve resume quality.
 
 ---
 
@@ -22,6 +22,9 @@ It also gives AI suggestions to improve your resume.
 - Flask
 - HTML/CSS
 - Ollama (for AI)
+
+  ---
+
 
 ## Key Highlights
 
