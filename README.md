@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Resume Analyzer with AI
 
 An AI-powered web application that analyzes resumes and provides skill-based scoring along with improvement suggestions.
@@ -54,3 +55,6 @@ AI suggestions require Ollama running on your system.
 ## Author
 
 Aayush Soni
+=======
+# resume-analyzer
+>>>>>>> 6ae6744e275cae915395324085453d0b128773f7
